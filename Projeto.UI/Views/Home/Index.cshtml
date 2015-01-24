@@ -13,6 +13,9 @@
         <li>Factory - Fabrica de objetos</li>
         <li>Repository - Mapeamento de dados utilizando uma interface</li>
     </ul>
+    <p>
+        OBS.: Este projeto é um CRUD básico, sem nenhum tipo de regra de negocio.
+    </p>
 </div>
 
 <div class="row">
@@ -21,14 +24,17 @@
         <p>
            Veja como é fácil cadastrar um aluno utilizando o Entity Framework 6
         </p>
+        @Html.ActionLink("Cadastrar", "Insert", new { controller = "Home" }, new { @class = "btn btn-default" })
     </div>
     <div class="col-md-4">
         <h2>Visualizar - Aluno</h2>
         <p>Visualize todos os alunos ou faça filtro de pesquisa para encontrar o aluno desejado</p>
+        @Html.ActionLink("Visualizar", "List", new { controller = "Home" }, new { @class = "btn btn-default" })
         
     </div>
     <div class="col-md-4">
         <h2>Exluir - Aluno</h2>
         <p>Veja como ficou fácil excluir um aluno utilizando Entity Framework 6</p>
+
     </div>
 </div>

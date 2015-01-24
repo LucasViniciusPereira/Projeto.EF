@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Projeto.UI.ViewModel.AlunoViewModel>
+@{
+    ViewBag.Title = "Listagem de Alunos";
+}
+
+<h2>Listagem de Alunos</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>@Html.DisplayNameFor(x => x.FirstOrDefault().nuMatricula)</td>
+            <td>@Html.DisplayNameFor(x => x.FirstOrDefault().Nome)</td>
+            <td>@Html.DisplayNameFor(x => x.FirstOrDefault().Sexo)</td>
+            <td>@Html.DisplayNameFor(x => x.FirstOrDefault().DtNascimento)</td>
+            <td>@Html.DisplayNameFor(x => x.FirstOrDefault().Idade)</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.nuMatricula</td>
+                <td>@item.Nome</td>
+                <td>@item.Sexo</td>
+                <td>@Html.DisplayFor(c => item.DtNascimento)</td>
+                <td>@Html.DisplayFor(c => item.Idade)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
