@@ -9,7 +9,7 @@ namespace Projeto.UI.ViewModel
 {
     public class AlunoViewModel
     {
-        [Display(Name = "Numero Matricula")]
+        [Display(Name = "Numero da Matricula")]
         public int nuMatricula { get; set; }
 
         public string Nome { get; set; }
