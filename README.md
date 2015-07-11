@@ -1,4 +1,4 @@
-# Projeto em Entity Framework 6
+# Projeto Entity Framework 6
 
 Utilizando ORM para acesso e gerenciamente no banco de dados, e utilizando alguns padrões de projeto, como.:
 
